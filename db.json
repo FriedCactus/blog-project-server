@@ -1,0 +1,718 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "a title",
+      "views": 100
+    },
+    {
+      "id": "2",
+      "title": "another title",
+      "views": 200
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "text": "Комментарий к статье 1",
+      "articleId": "1",
+      "userId": "1"
+    },
+    {
+      "id": "2",
+      "text": "Ещё комментарий к статье 1",
+      "articleId": "1",
+      "userId": "1"
+    },
+    {
+      "userId": "1",
+      "articleId": "14",
+      "text": "Комментарий",
+      "id": "w2bLpa1"
+    }
+  ],
+  "articles": [
+    {
+      "id": "1",
+      "userId": "1",
+      "title": "JavaScript в 2025: новые фреймворки и стандарты",
+      "subtitle": "Глубокий анализ текущих трендов в разработке на JS",
+      "img": "https://teknotower.com/wp-content/uploads/2020/11/js.png",
+      "views": 2871,
+      "createdAt": "21.04.2025",
+      "type": [
+        "IT"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Эволюция языка JavaScript",
+          "paragraphs": [
+            "JavaScript за последние годы прошёл огромный путь от языка для простых скриптов в браузере до полноценной платформы для веба, мобильных и даже десктопных приложений. В 2025 году ключевыми направлениями остаются модульность, производительность и поддержка серверных компонентов.",
+            "Появление новых стандартов ECMAScript продолжает упрощать разработку. Последние предложения включают синтаксический сахар для асинхронного программирования, поддержку Stage 3-функций и новые типы коллекций."
+          ]
+        },
+        {
+          "id": "2",
+          "type": "IMAGE",
+          "src": "https://kinsta.com/wp-content/uploads/2022/02/node-inspect.png",
+          "title": "Популярность JavaScript и экосистемы в 2025"
+        },
+        {
+          "id": "3",
+          "type": "TEXT",
+          "title": "Серверные компоненты и React 19",
+          "paragraphs": [
+            "React 19 представил полную поддержку Server Components, что позволило эффективно разделять логику между сервером и клиентом. Это радикально изменило подход к построению фронтенда.",
+            "Теперь большая часть предварительной загрузки, логики авторизации и запроса данных может происходить на сервере без лишнего JavaScript на клиенте."
+          ]
+        },
+        {
+          "id": "4",
+          "type": "CODE",
+          "code": "const UserInfo = async () => {\n  const session = await getServerSession(authOptions);\n\n  if (!session) {\n    return <p>Вы не вошли в систему</p>;\n  }\n\n  return (\n    <div>\n      <h2>Привет, {session.user?.name}</h2>\n      <p>Email: {session.user?.email}</p>\n    </div>\n  );\n};\n\nexport default UserInfo;"
+        },
+        {
+          "id": "5",
+          "type": "TEXT",
+          "title": "Интеграция с TypeScript",
+          "paragraphs": [
+            "TypeScript продолжает доминировать в разработке на JS. Он стал де-факто стандартом для крупных приложений благодаря строгой типизации, автодополнению и безопасности.",
+            "Появились новые фичи: шаблонные типы, вариативные кортежи, улучшенная поддержка JSX и автогенерация типов из API-спецификаций."
+          ]
+        },
+        {
+          "id": "6",
+          "type": "CODE",
+          "code": "const ReactComponent = () => {\n    const [counter, setCounter] = useState(0);\n    \n    return (\n        <div>\n            <p>\n                React Test Component\n            </p>\n        </div>\n    );\n};"
+        },
+        {
+          "id": "7",
+          "type": "IMAGE",
+          "src": "https://miro.medium.com/v2/resize:fit:1400/1*M8ZAGPiLDNiKv5Maurl8vA.png",
+          "title": "Эволюция React и Next.js"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "userId": "2",
+      "title": "Чёрные дыры и квантовая гравитация: шаг к теории всего?",
+      "img": "https://habrastorage.org/getpro/habr/upload_files/a07/068/18c/a0706818c93d36d98808ad56c42178f8.png",
+      "views": 2042,
+      "createdAt": "05.03.2025",
+      "type": [
+        "SCIENCE"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Теоретическая база",
+          "paragraphs": [
+            "Чёрные дыры — одни из самых загадочных объектов во Вселенной. В 2025 году исследования сосредоточены на объединении Общей теории относительности и квантовой механики в единую теорию квантовой гравитации.",
+            "Многие учёные полагают, что поведение материи вблизи горизонта событий может дать ключ к пониманию фундаментальных законов природы."
+          ]
+        },
+        {
+          "id": "2",
+          "type": "IMAGE",
+          "src": "https://www.ligo.caltech.edu/system/media_files/binaries/313/original/binary-merger.jpg",
+          "title": "Слияние чёрных дыр — источник гравитационных волн"
+        },
+        {
+          "id": "3",
+          "type": "TEXT",
+          "title": "Экспериментальные подтверждения",
+          "paragraphs": [
+            "С помощью интерферометров LIGO и Virgo за последние пять лет было зафиксировано более 100 событий, связанных с гравитационными волнами.",
+            "Каждое из них — возможность протестировать общую теорию относительности в экстремальных условиях. Астрономы продолжают искать следы испарения микроскопических чёрных дыр, предсказанных теорией Хокинга."
+          ]
+        },
+        {
+          "id": "4",
+          "type": "IMAGE",
+          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Black_hole_-_Messier_87_crop_max_res.jpg/800px-Black_hole_-_Messier_87_crop_max_res.jpg",
+          "title": "Фотография горизонта событий M87"
+        },
+        {
+          "id": "5",
+          "type": "TEXT",
+          "title": "Гипотеза голографического принципа",
+          "paragraphs": [
+            "Одна из самых захватывающих идей современной физики — это голографический принцип, согласно которому вся информация, заключённая в объёме пространства, может быть представлена на его границе.",
+            "Если эта гипотеза подтвердится, это может привести к полному пересмотру нашего понимания пространства и времени."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "userId": "2",
+      "title": "Крипторынок в 2025: рост или стагнация?",
+      "subtitle": "Как цифровые активы меняют финансовый мир",
+      "img": "https://content.kaspersky-labs.com/fm/press-releases/e0/e0c122e63ca4199bb2f758617abad50b/processed/cryptocurrencyimage11130490519670x377px300dpi-q75.jpg",
+      "views": 3195,
+      "createdAt": "30.05.2025",
+      "type": [
+        "CRYPTO"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Общая картина",
+          "paragraphs": [
+            "2025 год принёс относительную стабильность на крипторынок. Институциональные игроки продолжают наращивать позиции, а регуляторы вводят понятные правила.",
+            "Биткоин стабилизировался в районе $80,000, а многие альткойны вышли на этап зрелости. При этом интерес к децентрализованным финансам (DeFi) вновь начал расти."
+          ]
+        },
+        {
+          "id": "2",
+          "type": "IMAGE",
+          "src": "https://assets.coingecko.com/coins/images/1/large/bitcoin.png",
+          "title": "Логотип биткоина — символ децентрализации"
+        },
+        {
+          "id": "3",
+          "type": "TEXT",
+          "title": "CBDC и регулирование",
+          "paragraphs": [
+            "Цифровые валюты центральных банков (CBDC) активно тестируются во многих странах. Китай, ЕС и Бразилия уже перешли к масштабному пилоту.",
+            "Это вызывает споры: с одной стороны — прозрачность и контроль, с другой — потенциальная угроза приватности граждан."
+          ]
+        },
+        {
+          "id": "4",
+          "type": "IMAGE",
+          "src": "https://www.imf.org/-/media/Images/IMF/News/news-article-images/2022/October/101222-cbdc.ashx",
+          "title": "CBDC: цифровые валюты государств"
+        },
+        {
+          "id": "5",
+          "type": "TEXT",
+          "title": "Будущее Web3 и DeFi",
+          "paragraphs": [
+            "Web3 развивается как инфраструктура будущего интернета. Акцент делается на идентификацию пользователей, хранение активов в кошельках и взаимодействие без посредников.",
+            "DeFi-платформы работают стабильнее, прошли аудит, и интегрируются в традиционные банковские системы. Стейблкоины стали основой цифровых расчётов между странами."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "userId": "3",
+      "title": "Разработка Web3-приложений: от смарт-контрактов до фронтенда",
+      "subtitle": "Как соединяются миры программирования и блокчейна",
+      "img": "https://img.c-inform.info/cache/0/5/b2342434.jpg/dw900h500.jpg",
+      "views": 2745,
+      "createdAt": "27.05.2025",
+      "type": [
+        "IT",
+        "CRYPTO"
+      ],
+      "blocks": [
+        {
+          "id": 1,
+          "type": "TEXT",
+          "title": "Что такое Web3 и зачем он нужен",
+          "paragraphs": [
+            "Web3 — это новое поколение интернета, в котором пользователи контролируют свои данные, идентичность и активы. Он построен на децентрализованных технологиях вроде блокчейна, IPFS и криптографии.",
+            "Главная цель Web3 — исключить посредников и вернуть пользователям контроль над цифровыми взаимодействиями. Это особенно актуально в эпоху централизации данных и платформ."
+          ]
+        },
+        {
+          "id": 2,
+          "type": "IMAGE",
+          "src": "https://101blockchains.com/wp-content/uploads/2022/03/Web3-Applications.png",
+          "title": "Примеры Web3-приложений"
+        },
+        {
+          "id": 3,
+          "type": "TEXT",
+          "title": "Смарт-контракты на Solidity",
+          "paragraphs": [
+            "Solidity — основной язык программирования для смарт-контрактов в сети Ethereum. Он позволяет создавать безопасные, автоматические соглашения, исполняемые без посредников.",
+            "Контракты могут управлять токенами, DAO, проводить аукционы, и даже формировать полноценные игры на блокчейне. Важно учитывать безопасность: ошибки могут стоить миллионов долларов."
+          ]
+        },
+        {
+          "id": 4,
+          "type": "CODE",
+          "code": "pragma solidity ^0.8.0;\n\ncontract SimpleToken {\n    string public name = \"MyToken\";\n    mapping(address => uint) public balances;\n\n    function mint(address to, uint amount) public {\n        balances[to] += amount;\n    }\n}"
+        },
+        {
+          "id": 5,
+          "type": "TEXT",
+          "title": "Фронтенд для блокчейн-приложений",
+          "paragraphs": [
+            "Интерфейс Web3-приложений обычно строится на React или Next.js. Пользователь подключает кошелёк, взаимодействует с блокчейном через библиотеку вроде ethers.js или wagmi.",
+            "Новые фреймворки, такие как RainbowKit, viem и scaffold-eth, упрощают разработку и обеспечивают лучшую UX для децентрализованных сервисов."
+          ]
+        },
+        {
+          "id": 6,
+          "type": "IMAGE",
+          "src": "https://buildspace.so/_next/image?url=%2Fimg%2Fweb3%2Fcover.png&w=3840&q=75",
+          "title": "Типичная архитектура Web3-приложения"
+        },
+        {
+          "id": 7,
+          "type": "TEXT",
+          "title": "Тестирование и деплой",
+          "paragraphs": [
+            "Сначала контракты тестируются в локальной сети (например, Hardhat или Foundry), затем разворачиваются в testnet (Goerli, Sepolia). Для деплоя можно использовать Alchemy, Infura или собственные RPC-ноды.",
+            "Фронтенд подключается к смарт-контрактам по ABI, взаимодействуя через Web3-провайдер. Для хостинга применяются IPFS, Fleek или традиционные CDN с верифицированной подписью сборки."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Будущее JavaScript: Новые горизонты",
+      "subtitle": "Тренды в развитии JS в 2025 году",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
+      "views": 1320,
+      "createdAt": "10.03.2025",
+      "type": [
+        "IT"
+      ],
+      "userId": "1",
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Введение",
+          "paragraphs": [
+            "JavaScript продолжает оставаться ведущим языком веб-разработки.",
+            "В 2025 году наблюдается рост популярности серверных фреймворков на базе JS."
+          ]
+        },
+        {
+          "id": "2",
+          "type": "CODE",
+          "code": "const greet = (name) => console.log(`Hello, ${name}`);\ngreet('world');"
+        },
+        {
+          "id": "3",
+          "type": "IMAGE",
+          "src": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Node.js_logo.svg",
+          "title": "Node.js — серверный JavaScript"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Новые открытия в астрофизике",
+      "subtitle": "Как телескоп James Webb изменяет науку",
+      "img": "https://img.freepik.com/free-photo/laboratory-supplies-medical-work_23-2149744711.jpg?semt=ais_hybrid&w=740",
+      "views": 981,
+      "createdAt": "14.04.2025",
+      "type": [
+        "SCIENCE"
+      ],
+      "userId": "2",
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Новое оборудование",
+          "paragraphs": [
+            "Телескоп James Webb позволяет заглянуть глубже во Вселенную, чем когда-либо.",
+            "Наблюдения уже подтвердили существование галактик, старше ожидаемых."
+          ]
+        },
+        {
+          "id": "2",
+          "type": "IMAGE",
+          "src": "https://upload.wikimedia.org/wikipedia/commons/0/00/Deep_Field.jpg",
+          "title": "Изображения глубокого космоса"
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "title": "Криптовалюта и смарт-контракты",
+      "subtitle": "Роль блокчейна в будущем экономики",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg",
+      "views": 2455,
+      "createdAt": "01.05.2025",
+      "type": [
+        "CRYPTO"
+      ],
+      "userId": "3",
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Децентрализация",
+          "paragraphs": [
+            "Блокчейн обеспечивает прозрачность и защищенность операций.",
+            "Смарт-контракты позволяют автоматизировать сделки без посредников."
+          ]
+        },
+        {
+          "id": "2",
+          "type": "IMAGE",
+          "src": "https://upload.wikimedia.org/wikipedia/commons/9/97/Ethereum_logo.svg",
+          "title": "Ethereum и смарт-контракты"
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "title": "Совмещение науки и технологий",
+      "subtitle": "AI в астрономии",
+      "img": "https://img.freepik.com/free-vector/science-symbols-glass-container_1308-4744.jpg?semt=ais_items_boosted&w=740",
+      "views": 1567,
+      "createdAt": "12.05.2025",
+      "type": [
+        "IT",
+        "SCIENCE"
+      ],
+      "userId": "2",
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "ИИ в космосе",
+          "paragraphs": [
+            "Алгоритмы машинного обучения обрабатывают изображения космоса.",
+            "Это позволяет быстрее находить аномалии и интересные объекты."
+          ]
+        },
+        {
+          "id": "2",
+          "type": "IMAGE",
+          "src": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Neural_network_example.svg",
+          "title": "Пример нейросети"
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "title": "Статья номер 9",
+      "subtitle": "Подзаголовок статьи 9",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/4/48/Markdown-mark.svg",
+      "views": 1080,
+      "createdAt": "08.06.2025",
+      "type": [
+        "CRYPTO"
+      ],
+      "userId": "3",
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Введение",
+          "paragraphs": [
+            "Это статья номер 9. Она содержит полезную информацию.",
+            "В данном блоке описываются ключевые моменты темы."
+          ]
+        },
+        {
+          "id": "2",
+          "type": "IMAGE",
+          "src": "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
+          "title": "Изображение к статье"
+        },
+        {
+          "id": "3",
+          "type": "TEXT",
+          "title": "Заключение",
+          "paragraphs": [
+            "Статья завершает обзор темы.",
+            "Надеемся, информация была полезной."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "title": "Статья номер 10",
+      "subtitle": "Подзаголовок статьи 10",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/4/48/Markdown-mark.svg",
+      "views": 1090,
+      "createdAt": "09.06.2025",
+      "type": [
+        "IT"
+      ],
+      "userId": "1",
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Введение",
+          "paragraphs": [
+            "Это статья номер 10. Она содержит полезную информацию.",
+            "В данном блоке описываются ключевые моменты темы."
+          ]
+        },
+        {
+          "id": "2",
+          "type": "IMAGE",
+          "src": "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
+          "title": "Изображение к статье"
+        },
+        {
+          "id": "3",
+          "type": "TEXT",
+          "title": "Заключение",
+          "paragraphs": [
+            "Статья завершает обзор темы.",
+            "Надеемся, информация была полезной."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "title": "Статья номер 11",
+      "subtitle": "Подзаголовок статьи 11",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/4/48/Markdown-mark.svg",
+      "views": 1100,
+      "createdAt": "10.06.2025",
+      "type": [
+        "SCIENCE"
+      ],
+      "userId": "2",
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Введение",
+          "paragraphs": [
+            "Это статья номер 11. Она содержит полезную информацию.",
+            "В данном блоке описываются ключевые моменты темы."
+          ]
+        },
+        {
+          "id": "2",
+          "type": "IMAGE",
+          "src": "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
+          "title": "Изображение к статье"
+        },
+        {
+          "id": "3",
+          "type": "TEXT",
+          "title": "Заключение",
+          "paragraphs": [
+            "Статья завершает обзор темы.",
+            "Надеемся, информация была полезной."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "title": "Статья номер 12",
+      "subtitle": "Подзаголовок статьи 12",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/4/48/Markdown-mark.svg",
+      "views": 1110,
+      "createdAt": "11.06.2025",
+      "type": [
+        "CRYPTO"
+      ],
+      "userId": "3",
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Введение",
+          "paragraphs": [
+            "Это статья номер 12. Она содержит полезную информацию.",
+            "В данном блоке описываются ключевые моменты темы."
+          ]
+        },
+        {
+          "id": "2",
+          "type": "IMAGE",
+          "src": "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
+          "title": "Изображение к статье"
+        },
+        {
+          "id": "3",
+          "type": "TEXT",
+          "title": "Заключение",
+          "paragraphs": [
+            "Статья завершает обзор темы.",
+            "Надеемся, информация была полезной."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "title": "Статья номер 13",
+      "subtitle": "Подзаголовок статьи 13",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/4/48/Markdown-mark.svg",
+      "views": 1120,
+      "createdAt": "12.06.2025",
+      "type": [
+        "IT"
+      ],
+      "userId": "1",
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Введение",
+          "paragraphs": [
+            "Это статья номер 13. Она содержит полезную информацию.",
+            "В данном блоке описываются ключевые моменты темы."
+          ]
+        },
+        {
+          "id": "2",
+          "type": "IMAGE",
+          "src": "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
+          "title": "Изображение к статье"
+        },
+        {
+          "id": "3",
+          "type": "TEXT",
+          "title": "Заключение",
+          "paragraphs": [
+            "Статья завершает обзор темы.",
+            "Надеемся, информация была полезной."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "title": "Статья номер 14",
+      "subtitle": "Подзаголовок статьи 14",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/4/48/Markdown-mark.svg",
+      "views": 1130,
+      "createdAt": "13.06.2025",
+      "type": [
+        "SCIENCE"
+      ],
+      "userId": "2",
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Введение",
+          "paragraphs": [
+            "Это статья номер 14. Она содержит полезную информацию.",
+            "В данном блоке описываются ключевые моменты темы."
+          ]
+        },
+        {
+          "id": "2",
+          "type": "IMAGE",
+          "src": "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
+          "title": "Изображение к статье"
+        },
+        {
+          "id": "3",
+          "type": "TEXT",
+          "title": "Заключение",
+          "paragraphs": [
+            "Статья завершает обзор темы.",
+            "Надеемся, информация была полезной."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "title": "Статья номер 15",
+      "subtitle": "Подзаголовок статьи 15",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/4/48/Markdown-mark.svg",
+      "views": 1140,
+      "createdAt": "14.06.2025",
+      "type": [
+        "CRYPTO"
+      ],
+      "userId": "3",
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Введение",
+          "paragraphs": [
+            "Это статья номер 15. Она содержит полезную информацию.",
+            "В данном блоке описываются ключевые моменты темы."
+          ]
+        },
+        {
+          "id": "2",
+          "type": "IMAGE",
+          "src": "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
+          "title": "Изображение к статье"
+        },
+        {
+          "id": "3",
+          "type": "TEXT",
+          "title": "Заключение",
+          "paragraphs": [
+            "Статья завершает обзор темы.",
+            "Надеемся, информация была полезной."
+          ]
+        }
+      ]
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "username": "admin",
+      "password": "123456",
+      "avatar": "https://dis-blog.thalesgroup.com/wp-content/uploads/2020/10/hacker-sqr-380x380.jpg"
+    },
+    {
+      "id": "2",
+      "username": "user",
+      "password": "user",
+      "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa5x1b1KgHOrprIeZnft0wyiCiV4enSu44fg&s"
+    },
+    {
+      "id": "3",
+      "username": "FriedLemon",
+      "password": "123456",
+      "avatar": "https://dknews.kz/storage/news/2023-09/r3tclQdJ40qKlTwgVO0SXAXmQhsE2pMPX8Ai6gzA.jpg"
+    }
+  ],
+  "profiles": [
+    {
+      "id": "1",
+      "userId": "1",
+      "firstName": "Алексей",
+      "lastName": "Белянчиков",
+      "age": 29,
+      "currency": "RUB",
+      "country": "Russia",
+      "city": "Ульяновск",
+      "username": "admin",
+      "avatar": "https://dis-blog.thalesgroup.com/wp-content/uploads/2020/10/hacker-sqr-380x380.jpg"
+    },
+    {
+      "id": "2",
+      "userId": "2",
+      "firstName": "Иван",
+      "lastName": "Иванов",
+      "age": 20,
+      "currency": "USD",
+      "country": "Russia",
+      "city": "Москва",
+      "username": "user",
+      "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa5x1b1KgHOrprIeZnft0wyiCiV4enSu44fg&s"
+    },
+    {
+      "id": "3",
+      "userId": "3",
+      "firstName": "Михаил",
+      "lastName": "Михайлов",
+      "age": 25,
+      "currency": "RUB",
+      "country": "Russia",
+      "city": "Санкт-Петербург",
+      "username": "FriedLemon",
+      "avatar": "https://dknews.kz/storage/news/2023-09/r3tclQdJ40qKlTwgVO0SXAXmQhsE2pMPX8Ai6gzA.jpg"
+    }
+  ]
+}
